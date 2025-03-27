@@ -1,0 +1,99 @@
+/* Professional Dashboard Styling */
+
+.dashboard-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7fa, #bbdefb);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .system-info {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .primary-button, .secondary-button, .danger-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .primary-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .secondary-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .danger-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .primary-button:hover, .secondary-button:hover, .danger-button:hover {
+    opacity: 0.8;
+  }
+  
+  .emergency-info, .weather-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .emergency-info h3, .weather-info h3 {
+    color: #222;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .emergency-info ul, .weather-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .emergency-info li, .weather-info li {
+    font-size: 16px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .weather-info a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,194 @@
+
+body {
+  /* background: none !important; */
+  /* font-family: Arial, sans-serif !important; */
+  margin: 0 !important;
+  padding: 0 !important;
+
+}
+
+/* General Styles */
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 5%;
+  height: 80vh;
+  width: 150vh
+  
+  /* overflow-x: hidden; */
+}
+
+/* Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e00ff;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.admin-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.admin-header button {
+  background-color: white;
+  color: #007bff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admin-header button.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.admin-content {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Request Status Buttons */
+.request-status-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.status-button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.status-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Scrollable Table Container */
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Tables */
+.requests-table,
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.requests-table th,
+.requests-table td,
+.users-table th,
+.users-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.requests-table th,
+.users-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.clickable-row:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal p {
+  margin: 5px 0;
+}
+
+.modal select,
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Centering Save Button */
+.save-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto 0 auto;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .request-status-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .table-container {
+    max-height: 300px;
+  }
+
+  .modal {
+    width: 95%;
+  }
+}
+

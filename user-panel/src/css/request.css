@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    background: none !important;
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+  }
+  
+
+
+  
+  
+/* 🌟 Gradient Background */
+.request-container {
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #e0f2ff, #b3d9ff);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Checkboxes */
+.help-needed-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.help-options div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Submit Button */
+button {
+    background: #222;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .request-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}

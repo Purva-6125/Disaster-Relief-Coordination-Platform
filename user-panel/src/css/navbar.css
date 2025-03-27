@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #000; /* Same as login button */
+    padding: 10px 10px;
+    width: 100%;
+}
+
+/* .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Moves logo left and links right 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.navbar-logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    padding: 5px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    gap: 20px; /* Adds spacing between links */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
